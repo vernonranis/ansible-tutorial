@@ -1,0 +1,20 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+
+  - name: install apache2 package
+    dnf:
+      name: httpd
+      state: absent
+
+  - name: update repository index
+    dnf:
+      update_cache: yes
+
+  - name: add php support for apache
+    dnf:
+      name: libapache2-mod-php
+      state: absent
