@@ -5,9 +5,11 @@
   tasks:
 
   - name: installing packages
-    package:
+    dnf:
       name: 
-        - "{{ apache_package }}"
-        - "{{ php_package }}"
+        - httpd
+        - php
       state: latest
       update_cache: yes
+    when: anisble_distribution == "CentOS"
+

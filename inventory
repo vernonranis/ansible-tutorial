@@ -1,5 +1,8 @@
-centos@192.168.56.210 apache_package=httpd php_package=php
-centos@192.168.56.211 apache_package=httpd php_package=php
-centos@192.168.56.212 apache_package=httpd php_package=php
+[web_servers]
+centos@192.168.56.210 
 
+[db_servers]
+centos@192.168.56.211 
 
+[file_servers]
+centos@192.168.56.212 
