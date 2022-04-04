@@ -1,8 +1,8 @@
 [web_servers]
-centos@192.168.29.5 
+192.168.29.5 
 
 [db_servers]
-centos@192.168.29.6
+192.168.29.6
 
 [file_servers]
-centos@192.168.29.7
+192.168.29.7
